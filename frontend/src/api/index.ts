@@ -113,17 +113,17 @@ export const aiImageAPI = {
           },
           rumor_detection: {
             name: '图文谣言检测服务',
-            status: 'unhealthy',
+            status: aiStatus.status === 'healthy' ? 'healthy' : 'unhealthy',
             url: 'http://localhost:8010'
           },
           video_analysis_module1: {
             name: '视频分析模块1',
-            status: 'unhealthy',
+            status: aiStatus.status === 'healthy' ? 'healthy' : 'unhealthy',
             url: 'http://localhost:8003'
           },
           video_analysis_module2: {
             name: '视频分析模块2',
-            status: 'unhealthy',
+            status: aiStatus.status === 'healthy' ? 'healthy' : 'unhealthy',
             url: 'http://localhost:8004'
           }
         },
